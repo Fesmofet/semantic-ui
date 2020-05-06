@@ -1,15 +1,9 @@
-// @flow
-import Page from 'components/Page'
 import React from 'react'
-import { connect } from 'react-redux'
-import { Container, List, Image, Rating } from 'semantic-ui-react'
 import users from './mockData'
+import 'semantic-ui-css/semantic.css'
+import { Container, List, Image, Rating } from 'semantic-ui-react'
 
-type Props = {
-	reduxWorks: boolean
-}
-
-const Dashboard = ({reduxWorks}: Props) => {
+const Dashboard = () => {
 	return (
 		<Container>
 			<List>
@@ -27,10 +21,4 @@ const Dashboard = ({reduxWorks}: Props) => {
 	)
 }
 
-const mapStateToProps = state => {
-	return {
-		reduxWorks: state.reduxWorks.really
-	}
-}
-
-export default Page(connect(mapStateToProps)(Dashboard))
+export default Dashboard
