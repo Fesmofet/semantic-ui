@@ -77,9 +77,7 @@
     "dev": "cross-env next",
     "build": "cross-env next build",
     "start": "cross-env next start -p ${PORT:=3000}",
-    "lint:scripts": "cross-env eslint -c ./.eslintrc ./src ./webpack_config --ignore-pattern dist",
-    "flow": "flow",
-    "release": "standard-version"
+    "lint:scripts": "cross-env eslint -c ./.eslintrc ./src ./webpack_config --ignore-pattern dist"
   },
   "engines": {
     "node": ">=8"
